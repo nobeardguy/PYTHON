@@ -39,3 +39,4 @@ combined = fruits + vegetables
 total_no_of_items =  len(combined)      #finding the total no. of itemms in the combined tuples
 print(f"The combined tuple has {total_no_of_items} items: {combined}") 
 
+#working on more practices
