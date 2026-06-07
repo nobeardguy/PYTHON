@@ -42,7 +42,7 @@ for i in range(len(scores)):
         scores[i] = "Fail"
         print(scores)
 
-userinput = (23,34,100,54,45)
+userinput = (23,34,100,54,451)
 
 # a fn that takes a tuple of scores, converts it to a list, and then finds the max and min scores.
 def convert_to_list(userinput):
@@ -54,3 +54,33 @@ def convert_to_list(userinput):
 
 
 convert_to_list(userinput) 
+
+# Write a program that asks the user for 10 numbers, stores them in a list, and then:
+#Prints only the even numbers.
+#Prints the sum of all odd numbers.
+
+def even_odd_numbers():
+    numbers = []
+    #for i in range(numbers,10):
+    num = int(input("Enter 10 numbers:"))
+    numbers.append(num)
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    odd_numbers = [num for num in numbers if num % 2!= 0]
+    print(f"Even numbers: {even_numbers}")
+    print(f"Sum of Odd numbers: {sum(odd_numbers)}") 
+
+#even_odd_numbers() 
+
+#Create a list of student names. Sort them alphabetically, then reverse the order.
+students = ["Hassan","KG","Musa","Aisha","Zahara"]
+
+print(f"students sorted alphabetically: {sorted(students)}") 
+print(f"students in reverse order: {sorted(students, reverse=True)}")
+
+#Given a list of counties, remove duplicates while keeping the original order
+counties = ["Meru","Garissa","Nairobi","machakos","kisumu","Meru","Nairobi"]
+
+unique_counties = list(set(counties))  #removes duplicates but does not maintain the original order.
+print(unique_counties)
+
+print(list(dict.fromkeys(counties))) # another way to remove duplicates while keeping the original order.

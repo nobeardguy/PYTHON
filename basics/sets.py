@@ -18,10 +18,11 @@ print(f"Unique items: {unique_items}")
 # converting a list to a set to print unique values
 list = [11,11,22,22,33,44,44]
 list_to_set = set(list)     
-        # converting list to set
+        
 print(f"Original list: {list}")
 print(f"List as set with unique values: {list_to_set}") 
 
 # list in ascending order
 sorted_list = sorted(list,reverse=False) 
 print(f"List in ascending order: {sorted_list}") 
+
